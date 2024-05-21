@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="@dimen/x_ic_svg_medium_size" android:width="@dimen/x_ic_svg_medium_size" android:viewportWidth="56" android:viewportHeight="56">
+    <path android:fillColor="#00000000" android:pathData="M33,15l-12,12.5l12,12.5" android:strokeColor="@color/x_icon_color_selector" android:strokeWidth="4" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillType="evenOdd"/>
+</vector>

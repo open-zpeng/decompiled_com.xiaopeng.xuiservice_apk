@@ -1,0 +1,64 @@
+{
+  "environmentalSoundList": [
+    {
+      "type": 0,
+      "aef2ReverbMode": 0,
+      "aef2ReverbVolume": 40,
+      "aef2ReverbTime": 1500,
+      "aef2EchoMode": 3,
+      "aef2EchoGain": 0,
+      "aef2EchoTime": 280,
+      "aef2EchoFeedback": 40
+    },
+    {
+      "type": 1,
+      "aef2ReverbMode": 0,
+      "aef2ReverbVolume": 32,
+      "aef2ReverbTime": 4000,
+      "aef2EchoMode": 3,
+      "aef2EchoGain": 50,
+      "aef2EchoTime": 280,
+      "aef2EchoFeedback": 32
+    },
+    {
+      "type": 2,
+      "aef2ReverbMode": 0,
+      "aef2ReverbVolume": 50,
+      "aef2ReverbTime": 6000,
+      "aef2EchoMode": 3,
+      "aef2EchoGain": 40,
+      "aef2EchoTime": 280,
+      "aef2EchoFeedback": 32
+    },
+    {
+      "type": 3,
+      "aef2ReverbMode": 0,
+      "aef2ReverbVolume": 0,
+      "aef2ReverbTime": 5000,
+      "aef2EchoMode": 3,
+      "aef2EchoGain": 0,
+      "aef2EchoTime": 280,
+      "aef2EchoFeedback": 40
+    },
+    {
+      "type": 4,
+      "aef2ReverbMode": 0,
+      "aef2ReverbVolume": 30,
+      "aef2ReverbTime": 4000,
+      "aef2EchoMode": 3,
+      "aef2EchoGain": 40,
+      "aef2EchoTime": 280,
+      "aef2EchoFeedback": 25
+    },
+    {
+      "type": 5,
+      "aef2ReverbMode": 0,
+      "aef2ReverbVolume": 50,
+      "aef2ReverbTime": 3500,
+      "aef2EchoMode": 3,
+      "aef2EchoGain": 0,
+      "aef2EchoTime": 280,
+      "aef2EchoFeedback": 32
+    }
+  ]
+}

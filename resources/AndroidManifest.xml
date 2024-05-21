@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="android.uid.system" android:persistent="true" android:versionCode="1" android:versionName="1.0" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" coreApp="true" package="com.xiaopeng.xuiservice" platformBuildVersionCode="29" platformBuildVersionName="10">
+    <uses-sdk android:minSdkVersion="29" android:targetSdkVersion="29"/>
+    <uses-feature android:name="android.hardware.usb.host"/>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"/>
+    <original-package android:name="com.xiaopeng.caruiservice"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.REBOOT"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_ROUTING"/>
+    <uses-permission android:name="android.permission.MODIFY_DAY_NIGHT_MODE"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CONNECTIVITY_INTERNAL"/>
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES"/>
+    <uses-permission android:name="com.xiaopeng.settings.permission.AUTO_POWER_OFF_DIALOG"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="com.xiaopeng.appstore.permission.READ_APP_REMOTE_STATES"/>
+    <uses-permission android:name="com.xiaopeng.settings.permission.XUI_DIALOG"/>
+    <uses-permission android:name="com.xiaopeng.appstore.permission.READ_ASSEMBLE_STATES"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <permission android:label="@string/xuimanager_permission_label_xui_lightlanuage" android:name="com.xiaopeng.xuimanager.permission.XUI_LIGHTLANUAGE" android:protectionLevel="normal" android:description="@string/xuimanager_permission_desc_xui_lightlanuage"/>
+    <permission android:label="@string/xuimanager_permission_label_xui_ambientlight" android:name="com.xiaopeng.xuimanager.permission.XUI_AMBIENTLIGHT" android:protectionLevel="normal" android:description="@string/xuimanager_permission_desc_xui_ambientlight"/>
+    <permission android:label="@string/xuimanager_permission_label_xui_seatmassager" android:name="com.xiaopeng.xuimanager.permission.XUI_SEATMASSAGER" android:protectionLevel="normal" android:description="@string/xuimanager_permission_desc_xui_seatmassager"/>
+    <permission android:label="@string/xuimanager_permission_label_xui_makeuplight" android:name="com.xiaopeng.xuimanager.permission.XUI_MAKEUPLIGHT" android:protectionLevel="normal" android:description="@string/xuimanager_permission_desc_xui_makeuplight"/>
+    <permission android:label="@string/xuimanager_permission_label_xui_awareness" android:name="com.xiaopeng.xuimanager.permission.XUI_AWARENESS" android:protectionLevel="normal" android:description="@string/xuimanager_permission_desc_xui_awareness"/>
+    <permission android:label="@string/xuimanager_permission_label_xui_contextinfo" android:name="com.xiaopeng.xuimanager.permission.XUI_CONTEXTINFO" android:protectionLevel="normal" android:description="@string/xuimanager_permission_desc_xui_contextinfo"/>
+    <permission android:label="@string/xuimanager_permission_label_xui_smart" android:name="com.xiaopeng.xuimanager.permission.XUI_SMART" android:protectionLevel="normal" android:description="@string/xuimanager_permission_desc_xui_smart"/>
+    <permission android:label="@string/xuimanager_permission_label_xui_mediacenter" android:name="com.xiaopeng.xuimanager.permission.XUI_MEDIACENTER" android:protectionLevel="normal" android:description="@string/xuimanager_permission_desc_xui_mediacenter"/>
+    <permission android:label="@string/xuimanager_permission_label_xui_musicrecognize" android:name="com.xiaopeng.xuimanager.permission.XUI_MUSICRECOGNIZE" android:protectionLevel="normal" android:description="@string/xuimanager_permission_desc_xui_musicrecognize"/>
+    <permission android:label="@string/xuimanager_permission_label_xui_xapp" android:name="com.xiaopeng.xuimanager.permission.XUI_XAPP" android:protectionLevel="normal" android:description="@string/xuimanager_permission_desc_xui_xapp"/>
+    <permission android:label="@string/xuimanager_permission_label_xui_karaoke" android:name="com.xiaopeng.xuimanager.permission.XUI_KARAOKE" android:protectionLevel="normal" android:description="@string/xuimanager_permission_desc_xui_karaoke"/>
+    <permission android:label="@string/xuimanager_permission_label_xui_operation" android:name="com.xiaopeng.xuimanager.permission.XUI_OPERATION" android:protectionLevel="normal" android:description="@string/xuimanager_permission_desc_xui_operation"/>
+    <application android:label="XUI Service" android:name="com.xiaopeng.xuiservice.XUIServiceApplication" android:persistent="true" android:allowBackup="false" android:extractNativeLibs="false" android:directBootAware="true" android:networkSecurityConfig="@xml/network_config" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:usesNonSdkApi="true">
+        <service android:name="com.xiaopeng.xuiservice.XUIService" android:singleUser="true">
+            <intent-filter>
+                <action android:name="com.xiaopeng.xuimanager.IXUIService"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.xiaopeng.xuiservice.iot.IoTService" android:persistent="true" android:process=":iotservice" android:singleUser="true" android:directBootAware="true" android:networkSecurityConfig="@xml/network_config">
+            <intent-filter>
+                <action android:name="com.xiaopeng.xuimanager.IoTService"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.xiaopeng.xuiservice.opensdk.OpenCarService" android:persistent="true" android:process=":opencarsvc" android:singleUser="true" android:directBootAware="true" android:networkSecurityConfig="@xml/network_config">
+            <intent-filter>
+                <action android:name="com.xiaopeng.xuimanager.OpenCarService"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.xiaopeng.xuiservice.BootReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.PRE_BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="CUSTOMER" android:value="CAR_XIAOPENG"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.xiaopeng.xuiservice.uvccamera.uvcapp.activity.PreviewActivity" android:exported="true" android:process=":uvccamera" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"/>
+            </intent-filter>
+            <meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" android:resource="@xml/device_filter"/>
+            <meta-data android:name="com.xiaopeng.metadata.activity.flags" android:value="64"/>
+        </activity>
+        <service android:name="com.xiaopeng.xuiservice.uvccamera.uvcapp.UsbCameraService" android:persistent="true" android:process=":uvccamera" android:singleUser="true" android:directBootAware="true"/>
+        <provider android:name="com.xiaopeng.lib.apirouter.server.ApiPublisherProvider" android:exported="true" android:authorities="com.xiaopeng.xuiservice.api.publisher"/>
+        <service android:name="androidx.room.MultiInstanceInvalidationService" android:exported="false"/>
+    </application>
+</manifest>

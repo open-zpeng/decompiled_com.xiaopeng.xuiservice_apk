@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/background" android:background="@drawable/img_sr_warning_steeling" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/sr_warning_text_size" android:textColor="@color/sr_warning_color" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/sr_warning_margin_bottom" android:text="@string/sr_warning_steeling" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</com.xiaopeng.xui.widget.XRelativeLayout>

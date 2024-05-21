@@ -1,0 +1,42 @@
+package com.qiyi.video.qsrbase;
+/* loaded from: classes4.dex */
+public class QYSConst {
+    public static final String BUNDLE_KEY_CMD_LIST = "bundle_key_cmd_list";
+    public static final String BUNDLE_KEY_PAGE_NAME = "bundle_key_page_name";
+    public static final String BUNDLE_KEY_PAGE_STATE = "bundle_key_page_state";
+    public static final String BUNDLE_KEY_PLAY_STATE = "bundle_key_play_state";
+    public static final String BUNDLE_KEY_SERVICE_CALLBACK_LIST = "bundle_key_service_callback_list";
+    public static final String BUNDLE_KEY_SERVICE_CALLBACK_STATUS = "bundle_key_service_callback_status";
+    public static final String BUNDLE_KEY_SERVICE_CALLBACK_TYPE = "bundle_key_service_callback_type";
+    public static final String BUNDLE_TYPE_CLIENT_SEND_DATA = "bundle_key_client_send_data";
+    public static final String BUNDLE_TYPE_CLIENT_SEND_TYPE = "bundle_key_client_send_type";
+    public static final String DATA_TYPE_BUTTON = "button";
+    public static final String DATA_TYPE_SELECT = "select";
+    public static final String DATA_TYPE_TAB = "tab";
+    public static final int MSG_TYPE_CLEAR = 4;
+    public static final int MSG_TYPE_CLIENT_SEND = 102;
+    public static final int MSG_TYPE_CMD_LIST = 1;
+    public static final int MSG_TYPE_PAGE_STATE = 3;
+    public static final int MSG_TYPE_PLAY_STATE = 2;
+    public static final int MSG_TYPE_SERVICE_CALLBACK = 101;
+    public static final String PAGE_NAME_COMMON_PAGE = "CommonPage";
+    public static final String PAGE_NAME_HISTORY_PAGE = "HistoryPage";
+    public static final String PAGE_NAME_HOME_PAGE = "HomePage";
+    public static final String PAGE_NAME_PASSPORT_PAGE = "PassportPage";
+    public static final String PAGE_NAME_PLAYER_PAGE = "PlayerPage";
+    public static final String PAGE_NAME_RADIO_PAGE = "RadioPage";
+    public static final String PAGE_NAME_SEARCH_PAGE = "SearchPage";
+    public static final int PAGE_STATE_HISTORY = 3;
+    public static final int PAGE_STATE_HOME = 1;
+    public static final int PAGE_STATE_LOGIN = 5;
+    public static final int PAGE_STATE_PLAYER = 2;
+    public static final int PAGE_STATE_SEARCH = 4;
+    public static final int PAGE_STATE_STATE_ENTER = 1;
+    public static final int PAGE_STATE_STATE_EXIT = 2;
+    public static final int PLAY_STATE_DEFAULT = 1;
+    public static final int PLAY_STATE_LOADING = 5;
+    public static final int PLAY_STATE_PAUSED = 4;
+    public static final int PLAY_STATE_PLAYING = 3;
+    public static final int PLAY_STATE_PREPARED = 2;
+    public static final int PLAY_STATE_STOPED = 6;
+}

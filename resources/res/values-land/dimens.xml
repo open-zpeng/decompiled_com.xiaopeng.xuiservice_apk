@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_action_bar_default_height_material">48dp</dimen>
+    <dimen name="abc_text_size_subtitle_material_toolbar">12dp</dimen>
+    <dimen name="abc_text_size_title_material_toolbar">14dp</dimen>
+    <dimen name="sr_warning_layout_height">660dp</dimen>
+    <dimen name="sr_warning_layout_width">900dp</dimen>
+    <dimen name="sr_warning_margin_bottom">171dp</dimen>
+    <dimen name="sr_warning_text_size">45sp</dimen>
+    <dimen name="x_picker_select_text_size">@dimen/x_font_number_05_size</dimen>
+    <dimen name="x_segement_text_size">@dimen/x_font_body_01_size</dimen>
+    <dimen name="x_tab_layout_text_size">@dimen/x_font_body_01_size</dimen>
+    <dimen name="x_tabs_bar_tab_item_text_size">@dimen/x_font_title_04_size</dimen>
+</resources>

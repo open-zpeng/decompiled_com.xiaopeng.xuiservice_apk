@@ -1,0 +1,122 @@
+{
+  "version":"1.0.0",
+  "#description":{
+	"#name":"模式名称",
+	"#launchpkg":"模式业务实现方需要拉起的应用包名",
+	"#priority":"1-广播拉起，100-服务拉起",
+	"#value":"所有的配置项，-1均表示不生效,appflylimit除外",
+	"#brightness-icm":"仪表亮度配置",
+	"#brightness-panel":"主屏亮度配置",
+	"#brightness-panel-1":"副屏亮度配置，-2表示对应的panel进入时需要亮屏",
+	"#volumecfg":"音量配置",
+	"#volumeDynamic":"动态音量配置，大于0表示设定动态音量默认值，模式场景下调整后会记忆新的进入音量值",
+	"#light":"大灯配置，0-关",
+	"#voice":"data模式字段中0表示禁用语音，exitSignal中1表示语音激活需要退出",
+	"#enterCondition":"进入模式的前置条件判断,gear表示档位配置,door表示车门限制,bit0-左前门，bit1-右前门，bit2-左后门，bit3-右后门",
+	"#exitSignal":"退出模式的条件配置,gear表示档位,door表示车门状态配置,voice表示语音激活,screenOn表示亮屏",
+	"#appflylimit":"启动流转限制配置，-1系统定义了跨屏占用，用-2表示无效配置",
+	"#panelCover":"启动屏幕占用标记，bit0-主屏，bit1-副屏,...",
+	"#seatwelcomeDisable":"座椅迎宾屏蔽flag,1-表示屏蔽，默认不屏蔽",
+	"#conflictHint":"是否需要模式冲突提示，1-需要，默认不需要，全局配置",
+	"#conflict-zh":"模式冲突的toast提示中文文案，以模式名称对齐",
+	"#conflict-en":"模式冲突的toast提示英文文案，以模式名称对齐",
+	"#conflict-window":"Napa窗口冲突toast类型文案映射,winType表示napa窗口类型集合,type 0表示默认文案,panelAdapt表示是否动态显示主副驾文案"
+  },
+  "data":[
+    {
+	    "name":"waiting_mode",
+		"launchpkg":"com.xiaopeng.car.settings",
+		"priority":1,
+		"brightness-icm":1,
+		"brightness-panel":0,
+		"volumecfg":"",
+		"light":0,
+		"voice":-1,
+		"stopvoicedialog":1,
+		"enterCondition":{"gear":"P"},
+		"exitSignal":{"gear":"!P","door":15,"voice":1,"screenOn":1}
+	},
+	{
+	    "name":"cleaning_mode",
+		"launchpkg":"com.xiaopeng.car.settings",
+		"priority":1,
+		"brightness-icm":-1,
+		"brightness-panel":-1,
+		"volumecfg":"",
+		"light":-1,
+		"voice":0,
+		"stopvoicedialog":1,
+		"enterCondition":{"gear":"P"},
+		"exitSignal": {"gear":"!P"}
+	},
+	{
+	    "name":"meditation_mode",
+		"launchpkg":"com.xiaopeng.carcontrol",
+		"priority":1,
+		"brightness-icm":1,
+		"brightness-panel":-1,
+		"volumecfg":"if:<:8",
+		"light":0,
+		"voice":0,
+		"stopvoicedialog":1,
+		"mediakey":1,
+		"enterCondition":{"gear":"P","door":1},
+		"exitSignal": {"gear":"!P","door":1}
+	},
+	{
+	    "name":"spacecapsule_mode_sleep",
+		"launchpkg":"com.xiaopeng.carcontrol",
+		"priority":1,
+		"light":0,
+		"voice":-1,
+		"enterCondition":{"gear":"P"},
+		"exitSignal": {"gear":"!P"}
+	},
+	{
+	    "name":"spacecapsule_mode_movie",
+		"launchpkg":"com.xiaopeng.carcontrol",
+		"priority":1,
+		"light":0,
+		"voice":-1,
+		"mediakey":1,
+		"enterCondition":{"gear":"P"},
+		"exitSignal": {"gear":"!P"}
+	},
+	{
+	    "name":"vipseat_mode",
+		"launchpkg":"com.xiaopeng.carcontrol",
+		"priority":1,
+		"enterCondition":{"gear":"P"},
+		"exitSignal": {"gear":"!P"}
+	},
+	{
+	    "name":"trailed_mode",
+		"launchpkg":"com.xiaopeng.carcontrol",
+		"priority":1
+	}
+  ],
+  "conflict-zh":{
+  	"default":"请先退出当前模式:",
+	"waiting_mode":"请先退出等人模式",
+	"cleaning_mode":"请先退出清洁屏幕",
+	"meditation_mode":"请先退出冥想空间",
+	"spacecapsule_mode_sleep":"请先退出睡眠空间",
+	"spacecapsule_mode_movie":"请先退出观影空间",
+	"vipseat_mode":"请先退出座椅放平界面",
+	"trailed_mode":"请先退出拖车模式",
+	"5d_cinema_mode":"请先退出5D影院",
+	"cosmetic_space_mode":"请先退出副驾美妆空间"
+  },
+  "conflict-en":{
+	"default":"please exit current mode first:",
+	"waiting_mode":"please exit waiting mode first",
+	"cleaning_mode":"please exit clean mode first",
+	"meditation_mode":"please exit meditation mode first",
+	"spacecapsule_mode_sleep":"please exit sleep space first",
+	"spacecapsule_mode_movie":"please exit movie space first",
+	"vipseat_mode":"please exit seat flat page first",
+	"trailed_mode":"please exit trailed mode first",
+	"5d_cinema_mode":"please exit 5D cinema space first",
+	"cosmetic_space_mode":"Please exit Makeup Space on the passenger screen first"
+  }
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="XKeyConfigArray">
+        <item>自定义配置1</item>
+        <item>自定义配置2</item>
+        <item>自定义配置3</item>
+    </array>
+    <array name="effect_sets">
+        <item>@string/effect_item_surround_title</item>
+        <item>@string/effect_item_ktv_title</item>
+        <item>@string/effect_item_profession_title</item>
+        <item>@string/effect_item_pop_title</item>
+        <item>@string/effect_item_rap_title</item>
+        <item>@string/effect_item_live_title</item>
+        <item>@string/effect_item_folk_title</item>
+        <item>@string/effect_item_female_title</item>
+        <item>@string/effect_item_male_title</item>
+        <item>@string/effect_item_electric_title</item>
+    </array>
+    <array name="x_quick_side_bar_letters">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+        <item>#</item>
+    </array>
+</resources>

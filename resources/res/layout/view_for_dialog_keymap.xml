@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XTextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="@dimen/x_font_body_02_size" android:textColor="@color/x_theme_text_01" android:gravity="bottom|center_horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/hid_device_dialog_msg"/>

@@ -1,0 +1,43 @@
+package com.xiaopeng.xuiservice.xapp.speech;
+/* loaded from: classes5.dex */
+public class SpeechConstants {
+    public static final String COMMAND_PLAY_BLUETOOTH = "music.control.bluetooth.play.random";
+    public static final String COMMAND_PLAY_BOOK = "xmly.control.play";
+    public static final String COMMAND_PLAY_BOOK_LIST = "music.audiobook.play";
+    public static final String COMMAND_PLAY_COLLECT = "music.control.collect.play";
+    public static final String COMMAND_PLAY_DAILY_RECOMMEND = "music.dailyrec.play";
+    public static final String COMMAND_PLAY_HISTORY = "music.control.playlist.history.play";
+    public static final String COMMAND_PLAY_LOCAL_FM = "fm.local.on";
+    public static final String COMMAND_PLAY_MUSIC = "music.control.play";
+    public static final String COMMAND_PLAY_MUSIC_LIST = "music.list.play";
+    public static final String COMMAND_PLAY_NEWS = "music.news.play";
+    public static final String COMMAND_PLAY_PERSON_CHANNEL = "fm.play.personality";
+    public static final String COMMAND_PLAY_USB = "music.control.play.usb";
+    public static final String COMMAND_SPECIAL_BACKWARD = "music.backward";
+    public static final String COMMAND_SPECIAL_FORWARD = "music.forward";
+    public static final String COMMAND_SPEED_DOWN = "music.speed.down";
+    public static final String COMMAND_SPEED_SET = "music.speed.set";
+    public static final String COMMAND_SPEED_UP = "music.speed.up";
+    public static final String KEY_ALI_ID = "ali_id";
+    public static final String KEY_ARTIST = "artist";
+    public static final String KEY_COMMAND = "command";
+    public static final String KEY_COMMAND_DATA = "data";
+    public static final String KEY_COMMAND_DATA_KEYWORD = "keyword";
+    public static final String KEY_COMMAND_TYPE = "type";
+    public static final String KEY_DISPLAY_LOCATION = "display_location";
+    public static final String KEY_MODE = "mode";
+    public static final String KEY_PACKAGE_NAME = "package_name";
+    public static final String KEY_PAGE_URL = "page_url";
+    public static final String KEY_PARAMS_VALUE = "value";
+    public static final String KEY_SONG = "song";
+    public static final String KEY_SONG_INFO = "song_info";
+    public static final String KEY_SOUND_LOCATION = "sound_location";
+    public static final String KEY_VIDEO_SET = "video_set";
+    public static final String KEY_VIDEO_SET_TIME = "video_set_time";
+    public static final String KEY_VIDEO_SPEED = "speed";
+    public static final String KEY_VIDEO_SPEED_SET = "video_speed_set";
+    public static final String KEY_VIDEO_TIME = "time";
+    public static final String PRE_COMMAND = "command://";
+    public static final String VALUE_MODE_MEDIA = "media";
+    public static final String VALUE_MODE_VIDEO = "video";
+}

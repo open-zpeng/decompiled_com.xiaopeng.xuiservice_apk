@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xuiservice.xapp.mode.widget.NavigationBar xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/navigation_view" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@android:style/Theme.Holo.Light">
+    <com.xiaopeng.xui.widget.XLinearLayout android:id="@+id/ll_expand_parent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.xiaopeng.xui.widget.XImageView android:id="@+id/img_expand" android:background="@drawable/bg_navi_bar_expand" android:visibility="gone" android:layout_width="@dimen/navi_bar_hor_expand_width" android:layout_height="@dimen/navi_bar_hor_expand_height" android:src="@drawable/ic_expand" android:scaleType="centerInside"/>
+    </com.xiaopeng.xui.widget.XLinearLayout>
+    <com.xiaopeng.xui.widget.XLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/content" android:background="@drawable/bg_app_levitate" android:paddingLeft="25dp" android:paddingTop="@dimen/navi_content_padding" android:paddingRight="25dp" android:paddingBottom="@dimen/navi_content_padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.xiaopeng.xui.widget.XImageButton android:id="@+id/exit" style="@style/XButton.Icon.Large.Close"/>
+        <com.xiaopeng.xui.widget.XImageButton android:id="@+id/back" android:layout_marginLeft="@dimen/qc_margin_left" style="@style/XButton.Icon.Large.Back"/>
+        <com.xiaopeng.xui.widget.XImageButton android:id="@+id/img_share" android:layout_marginLeft="@dimen/qc_margin_left" android:src="@drawable/ic_shared_display" style="@style/XButton.Icon.Large"/>
+        <com.xiaopeng.xui.widget.XImageButton android:id="@+id/img_sound_effect" android:layout_marginLeft="@dimen/qc_margin_left" android:src="@drawable/ic_sound_effect" android:scaleType="center" style="@style/XButton.Icon.Large"/>
+        <com.xiaopeng.xui.widget.XImageButton android:id="@+id/img_more" android:layout_marginLeft="@dimen/qc_margin_left" android:src="@drawable/x_ic_small_more" style="@style/XButton.Icon.Large"/>
+        <com.xiaopeng.xui.widget.XImageButton android:id="@+id/img_joystick" android:visibility="gone" android:layout_marginLeft="@dimen/qc_margin_left" android:src="@drawable/ic_mid_handle" style="@style/XButton.Icon.Large"/>
+        <com.xiaopeng.xui.widget.XLinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/view_collapse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40dp">
+            <com.xiaopeng.xui.widget.XImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_collapse"/>
+            <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_body_03_size" android:textColor="@color/x_edit_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qs_panel_collapse" android:maxLines="1"/>
+        </com.xiaopeng.xui.widget.XLinearLayout>
+    </com.xiaopeng.xui.widget.XLinearLayout>
+</com.xiaopeng.xuiservice.xapp.mode.widget.NavigationBar>

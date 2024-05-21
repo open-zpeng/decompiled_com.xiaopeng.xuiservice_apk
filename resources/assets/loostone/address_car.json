@@ -1,0 +1,10 @@
+{
+  "appUpdate": "http://carapi.puremic.com/loostone_player/api.php/AppUpdate/getInfo",
+  "micLimitInfo": "http://carapi.puremic.com/loostone_player/api.php/AudioConfig/getMicLimitInfo",
+  "statisticalMicInfo": "http://carapi.puremic.com/loostone_player/api.php/StatisticalRecord/addMicInfo",
+  "micCommInfo": "http://carapi.puremic.com/loostone_player/api.php/MicConfig/getCommInfo",
+  "cacheRefresh": "http://carapi.puremic.com/loostone_player/api.php/RefreshCache/getRefreshData",
+  "communicationKernel": "http://carapi.puremic.com/loostone_player/api.php/Communication/getData",
+  "karaokeVoiceApp": "http://carapi.puremic.com/loostone_player/api.php/KaraokeVoice/getInfo",
+  "karaokeVolume": "http://carapi.puremic.com/loostone_player/api.php/PuremicVolume/getInfo"
+}

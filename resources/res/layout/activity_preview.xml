@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#ff000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaopeng.xuiservice.uvccamera.widget.AspectRatioTextureView android:id="@+id/viewMainPreview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_alignWithParentIfMissing="true"/>
+    <TextView android:textSize="20dp" android:textColor="@color/x_theme_text_07" android:id="@+id/tvConnectUSBCameraTip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/uvc_main_connect_usb_tip" android:layout_centerInParent="true"/>
+</RelativeLayout>

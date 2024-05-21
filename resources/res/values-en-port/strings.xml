@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="llu_toast_disabled">Please turn on the main switch for light signals in \"Vehicle Controls - Lights\" page</string>
+</resources>

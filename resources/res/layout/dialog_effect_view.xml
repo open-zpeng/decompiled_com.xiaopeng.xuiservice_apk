@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xuiservice.xapp.mode.effect.EffectPanel xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:theme="@style/XAppTheme" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_body_03_size" android:textColor="@color/x_theme_text_03" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dialog_effect_reverberation_title"/>
+    <com.xiaopeng.xui.widget.slider.XSlider android:id="@+id/slide_reverberation" android:layout_width="@dimen/effect_severberation_slider_width" android:layout_height="wrap_content" style="@style/XSlider"/>
+    <com.xiaopeng.xui.widget.XLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_music_effect" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <com.xiaopeng.xui.widget.XSwitch android:id="@+id/switch_music_effect" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_body_01_size" android:textColor="@color/x_theme_text_02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/effect_music_margin_left" android:text="@string/dialog_effect_music_dec"/>
+    </com.xiaopeng.xui.widget.XLinearLayout>
+    <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_body_03_size" android:textColor="@color/x_theme_text_03" android:id="@+id/effect_sets_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_effect_sets_title"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerView_effect" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" app:spanCount="4"/>
+</com.xiaopeng.xuiservice.xapp.mode.effect.EffectPanel>

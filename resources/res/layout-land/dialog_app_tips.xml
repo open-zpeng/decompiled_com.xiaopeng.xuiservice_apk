@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_title_01_size" android:textColor="@color/x_theme_text_01" android:layout_gravity="center" android:id="@+id/tips_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_tips_title_margin_top" android:text="@string/dialog_app_tips_title"/>
+    <androidx.cardview.widget.CardView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_tips_cardview_margin_top" app:cardBackgroundColor="@color/tips_bg_dialog_color" app:cardCornerRadius="@dimen/app_tips_cardview_radius" app:cardElevation="0dp">
+        <com.xiaopeng.xui.widget.XImageView android:id="@+id/iv_icon" android:layout_width="@dimen/app_tips_dialog_icon_size" android:layout_height="@dimen/app_tips_dialog_icon_size" android:scaleType="fitXY"/>
+    </androidx.cardview.widget.CardView>
+    <com.xiaopeng.xui.widget.XScrollView android:gravity="center" android:layout_height="0dp" android:layout_marginTop="@dimen/app_tips_dialog_desc_margin_top" android:minHeight="100dp" android:fillViewport="true" android:layout_weight="1" android:layout_marginStart="20dp" android:layout_marginEnd="20dp" style="@style/XDialogContentScrollViewStyle">
+        <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_body_01_size" android:textColor="@color/x_theme_text_02" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/dialog_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_app_tips_msg" app:vuiMode="DISABLED"/>
+    </com.xiaopeng.xui.widget.XScrollView>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/x_dialog_button_height" android:layout_marginTop="40dp">
+        <com.xiaopeng.xui.widget.XButton android:id="@+id/dialog_button_positive" android:text="@string/dialog_cofirm" app:vuiDisableHitEffect="true" app:vuiEnableViewVuiMode="true" style="@style/XButton.Dialog.Negative"/>
+        <com.xiaopeng.xui.widget.XButton android:id="@+id/dialog_button_negative" android:text="@string/dialog_quit" app:vuiDisableHitEffect="true" app:vuiEnableViewVuiMode="true" style="@style/XButton.Dialog.Positive"/>
+    </LinearLayout>
+</LinearLayout>
